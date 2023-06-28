@@ -122,6 +122,55 @@
         </li>
       </ul>
     </section>
+    <section class="main-content__catalog catalog">
+      <h2 class="catalog__title">Каталог</h2>
+      <form class="catalog__filter">
+        <fieldset class="catalog__filter-group group-range">
+          <legend class="group-range__title">Цена</legend>
+          <div class="group-range__range-controls">
+            <div class="group-range__scale">
+              <div class="group-range__bar"></div>
+            </div>
+            <div class="group-range__range-toggle range-toggle-min"></div>
+            <div class="group-range__range-toggle range-toggle-max"></div>
+          </div>
+          <div class="group-range__price-controls">
+            <label class="group-range__min-price"><input type="text" name="min-price" value="0"></label>
+            <label class="group-range__max-price"><input type="text" name="max-price" value="123"></label>
+          </div>
+        </fieldset>
+        <fieldset class="catalog__filter-group group-radio">
+          <legend class="group-radio__title">Наличие молока</legend>
+          <ul class="group-radio__list">
+            <li class="group-radio__item">
+              <label class="group-radio__label">
+                <input class="group-radio__input visually-hidden" type="radio" name="milk" value="mo-matter" checked>
+                <span class="group-radio__input--style">Неважно</span>
+              </label>
+            </li>
+            <li class="group-radio__item">
+              <label class="group-radio__label">
+                <input class="group-radio__input visually-hidden" type="radio" name="milk" value="animal-only">
+                <span class="group-radio__input--style">Только животное</span>
+              </label>
+            </li>
+            <li class="group-radio__item">
+              <label class="group-radio__label">
+                <input class="group-radio__input visually-hidden" type="radio" name="milk" value="only-vegetable">
+                <span class="group-radio__input--style">Только растительное</span>
+              </label>
+            </li>
+            <li class="group-radio__item">
+              <label class="group-radio__label">
+                <input class="group-radio__input visually-hidden" type="radio" name="milk" value="no-milk">
+                <span class="group-radio__input--style">Без молока</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <div class="catalog__menu"></div>
+    </section>
   </main>
 
   <script src="./js/script.js" defer></script>
