@@ -1,6 +1,13 @@
 .menu {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
 }
 
 .menu__item {
@@ -10,6 +17,19 @@
 
   &:last-child {
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 349px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
   }
 }
 

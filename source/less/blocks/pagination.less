@@ -1,3 +1,10 @@
+.pagination {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: right;
+  }
+}
+
 .pagination__list {
   display: flex;
   justify-content: space-between;
@@ -13,6 +20,12 @@
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }
 
 .pagination__link {

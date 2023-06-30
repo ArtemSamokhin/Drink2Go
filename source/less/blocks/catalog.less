@@ -1,6 +1,11 @@
 .catalog {
   padding: 50px 20px 44px 20px;
   background-color: #f8f8f8;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
 }
 
 .catalog__title {
@@ -14,6 +19,13 @@
   letter-spacing: 0.48px;
 }
 
+.catalog__filter {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .catalog__filter-title {
   margin: 0;
   margin-bottom: 20px;
@@ -21,30 +33,9 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-}
 
-.catalog__filter-submit {
-  background-color: #7859cf;
-  color: #ffffff;
-  border: none;
-  padding: 8px 91px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-  border-radius: 4px;
-  margin-bottom: 28px;
-  cursor: pointer;
-}
-
-.catalog__filter-reset {
-  background-color: #ffffff;
-  color: #7859cf;
-  border: none;
-  padding: 8px 97px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-  border-radius: 4px;
-  margin-bottom: 28px;
-  cursor: pointer;
+  @media (min-width: @tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
