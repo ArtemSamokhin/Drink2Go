@@ -1,5 +1,22 @@
+.footer-navigation {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 70%;
+  }
+}
+
 .footer-navigation__block {
   padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer-navigation__title {

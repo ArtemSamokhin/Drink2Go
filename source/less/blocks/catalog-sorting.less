@@ -1,6 +1,10 @@
 .catalog-sorting {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: right;
+  }
 }
 
 .catalog-sorting__title {
