@@ -1,8 +1,22 @@
+.main-footer {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+}
+
 .main-footer__developer {
   padding: 20px 57px 30px 57px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 0;
   }
 }
 

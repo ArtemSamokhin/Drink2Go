@@ -5,6 +5,11 @@
     display: flex;
     padding-right: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 65%;
+    justify-content: space-around;
+  }
 }
 
 .main-navigation__list {
@@ -20,6 +25,28 @@
 
 .main-navigation__item {
   padding: 18px 22px;
+
+  @media (min-width: @desktop-width) {
+    padding: 20px 32px;
+  }
+}
+
+.main-navigation__link {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
 }
 
 .main-navigation__button-menu {
@@ -76,4 +103,12 @@
 .main-navigation__menu-link {
   text-decoration: none;
   color: #333333;
+}
+
+.main-navigation__link-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

@@ -6,8 +6,28 @@
 .main-header__logo {
   padding: 10px 20px;
   margin: 0;
+  color: #333333;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.main-header__logo-image {
+  margin-right: 20px;
 }
 
 .main-header__nav {
   display: flex;
+}
+
+.main-header__logo-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
