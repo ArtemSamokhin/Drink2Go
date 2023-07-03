@@ -25,6 +25,18 @@
     width: auto;
     justify-content: space-between;
   }
+
+  &--white {
+    background-color: #f3ebe1;
+  }
+
+  &--lavender {
+    background-color: #eae6fc;
+  }
+
+  &--black {
+    background-color: #e5e6e8;
+  }
 }
 
 .slider__button {
@@ -54,6 +66,11 @@
 }
 
 .slider__image {
+  @media (min-width: @tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 600px;
     height: 600px;
@@ -124,11 +141,11 @@
 
   @media (min-width: @tablet-width) {
     order: 4;
-    width: 100%;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
+    justify-content: start;
   }
 }
 

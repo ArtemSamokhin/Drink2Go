@@ -38,7 +38,7 @@
           </a>
         </li>
       </ul>
-      <button class="main-navigation__button-menu" href="#">
+      <button class="main-navigation__button-menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
           <path fill="#333" fill-rule="evenodd" d="M0 2h16v1.5H0V2Zm0 5.25h16v1.5H0v-1.5Zm16 5.25H0V14h16v-1.5Z"
             clip-rule="evenodd" />
@@ -65,15 +65,30 @@
   <main class="main-content">
     <h1 class="main-content__title visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков.</h1>
     <section class="main-content__slider slider">
-      <button class="slider__button" href="#">
+      <button class="slider__button">
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none">
           <path fill="#7859CF" fill-rule="evenodd" d="M9.72 0 11 1.32 2.57 10 11 18.68 9.72 20 0 10 9.72 0Z"
             clip-rule="evenodd" />
         </svg>
       </button>
-      <div class="slider__wrapper">
+      <div class="slider__wrapper slider__wrapper--white">
         <div class="slider__image-container">
-          <img class="slider__image" src="img/flat_white_img.png" width="280" height="280">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/sliders/white-coffee-desktop.webp 1x, img/sliders/white-coffee-desktop@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/sliders/white-coffee-tablet.webp 1x, img/sliders/white-coffee-tablet@2x.webp 2x"
+              type="image/webp">
+            <source srcset="img/sliders/white-coffee-mobile.webp 1x, img/sliders/white-coffee-mobile@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 1440px)"
+              srcset="img/sliders/white-coffee-desktop.png 1x, img/sliders/white-coffee-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/sliders/white-coffee-tablet.png 1x, img/sliders/white-coffee-tablet@2x.png 2x">
+            <img class="slider__image" src="img/sliders/white-coffee-mobile.png"
+              srcset="img/sliders/white-coffee-mobile@2x.webp 2x" width="280" height="280" alt="Белый кофе.">
+          </picture>
         </div>
         <div class="slider__container">
           <p class="slider__alert-new">Новинка!</p>
@@ -87,7 +102,69 @@
           </div>
         </div>
       </div>
-      <button class="slider__button" href="#">
+      <div class="slider__wrapper visually-hidden slider__wrapper--lavender">
+        <div class="slider__image-container">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/sliders/lavender-coffee-desktop.webp 1x, img/sliders/lavender-coffee-desktop@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/sliders/lavender-coffee-tablet.webp 1x, img/sliders/lavender-coffee-tablet@2x.webp 2x"
+              type="image/webp">
+            <source srcset="img/sliders/lavender-coffee-mobile.webp 1x, img/sliders/lavender-coffee-mobile@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 1440px)"
+              srcset="img/sliders/lavender-coffee-desktop.png 1x, img/sliders/lavender-coffee-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/sliders/lavender-coffee-tablet.png 1x, img/sliders/lavender-coffee-tablet@2x.png 2x">
+            <img class="slider__image" src="img/sliders/lavender-coffee-mobile.png"
+              srcset="img/sliders/lavender-coffee-mobile@2x.webp 2x" width="280" height="280" alt="Лавандовый кофе.">
+          </picture>
+        </div>
+        <div class="slider__container">
+          <p class="slider__alert-new">Новинка!</p>
+          <h2 class="slider__title">Лавандовый Латте</h2>
+          <span class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+            лавандовым сиропом унесёт вас прямо на вершину Радужных гор</span>
+          <div class="slider__price-zone">
+            <s class="slider__price-zone-old">285₽</s>
+            <span class="slider__price-zone-new">265₽</span>
+            <button class="slider__price-zone-button">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider__wrapper visually-hidden slider__wrapper--black">
+        <div class="slider__image-container">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/sliders/black-coffee-desktop.webp 1x, img/sliders/black-coffee-desktop@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/sliders/black-coffee-tablet.webp 1x, img/sliders/black-coffee-tablet@2x.webp 2x"
+              type="image/webp">
+            <source srcset="img/sliders/black-coffee-mobile.webp 1x, img/sliders/black-coffee-mobile@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 1440px)"
+              srcset="img/sliders/black-coffee-desktop.png 1x, img/sliders/black-coffee-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/sliders/black-coffee-tablet.png 1x, img/sliders/black-coffee-tablet@2x.png 2x">
+            <img class="slider__image" src="img/sliders/black-coffee-mobile.png"
+              srcset="img/sliders/black-coffee-mobile@2x.webp 2x" width="280" height="280" alt="Черный кофе.">
+          </picture>
+        </div>
+        <div class="slider__container">
+          <p class="slider__alert-new">Новинка!</p>
+          <h2 class="slider__title">Тройной Эспрессо</h2>
+          <span class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+            Колумбии покажет вам, что такое настоящая бодрость</span>
+          <div class="slider__price-zone">
+            <s class="slider__price-zone-old">395₽</s>
+            <span class="slider__price-zone-new">375₽</span>
+            <button class="slider__price-zone-button">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <button class="slider__button">
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none">
           <path fill="#7859CF" fill-rule="evenodd" d="M1.28 0 0 1.32 8.43 10 0 18.68 1.28 20 11 10 1.28 0Z"
             clip-rule="evenodd" />
@@ -249,7 +326,12 @@
         <ul class="catalog__menu-items menu">
           <li class="menu__item">
             <div class="menu__image">
-              <img src="img/menu-cofee/coffee-can-1.png">
+              <picture>
+                <source srcset="img/menu-coffee/coffee-can-1.webp 1x, img/menu-coffee/coffee-can-1@2.webp 2x"
+                  type="image/webp">
+                <img src="img/menu-coffee/coffee-can-1.png" srcset="img/menu-coffee/coffee-can-1@2.png 2x" width="130"
+                  height="188" alt="Белый кофе.">
+              </picture>
             </div>
             <h3 class="menu__title">Декаф Флэт Уайт</h3>
             <span class="menu__description">Кофе без кофеина из Эфиопии
@@ -268,7 +350,12 @@
           </li>
           <li class="menu__item">
             <div class="menu__image">
-              <img src="img/menu-cofee/coffee-can-2.png">
+              <picture>
+                <source srcset="img/menu-coffee/coffee-can-2.webp 1x, img/menu-coffee/coffee-can-2@2.webp 2x"
+                  type="image/webp">
+                <img src="img/menu-coffee/coffee-can-2.png" srcset="img/menu-coffee/coffee-can-2@2.png 2x" width="130"
+                  height="188" alt="Голубой кофе.">
+              </picture>
             </div>
             <h3 class="menu__title">Декаф Флэт Уайт</h3>
             <span class="menu__description">Кофе без кофеина из Эфиопии
@@ -287,7 +374,12 @@
           </li>
           <li class="menu__item">
             <div class="menu__image">
-              <img src="img/menu-cofee/coffee-can-3.png">
+              <picture>
+                <source srcset="img/menu-coffee/coffee-can-3.webp 1x, img/menu-coffee/coffee-can-3@2.webp 2x"
+                  type="image/webp">
+                <img src="img/menu-coffee/coffee-can-3.png" srcset="img/menu-coffee/coffee-can-3@2.png 2x" width="130"
+                  height="188" alt="Черный кофе.">
+              </picture>
             </div>
             <h3 class="menu__title">Декаф Флэт Уайт</h3>
             <span class="menu__description">Кофе без кофеина из Эфиопии
@@ -306,7 +398,12 @@
           </li>
           <li class="menu__item">
             <div class="menu__image">
-              <img src="img/menu-cofee/coffee-can-4.png">
+              <picture>
+                <source srcset="img/menu-coffee/coffee-can-4.webp 1x, img/menu-coffee/coffee-can-4@2.webp 2x"
+                  type="image/webp">
+                <img src="img/menu-coffee/coffee-can-4.png" srcset="img/menu-coffee/coffee-can-4@2.png 2x" width="130"
+                  height="188" alt="Розовый кофе.">
+              </picture>
             </div>
             <h3 class="menu__title">Декаф Флэт Уайт</h3>
             <span class="menu__description">Кофе без кофеина из Эфиопии
@@ -325,7 +422,12 @@
           </li>
           <li class="menu__item">
             <div class="menu__image">
-              <img src="img/menu-cofee/coffee-can-5.png">
+              <picture>
+                <source srcset="img/menu-coffee/coffee-can-5.webp 1x, img/menu-coffee/coffee-can-5@2.webp 2x"
+                  type="image/webp">
+                <img src="img/menu-coffee/coffee-can-5.png" srcset="img/menu-coffee/coffee-can-5@2.png 2x" width="130"
+                  height="188" alt="Коричневый кофе.">
+              </picture>
             </div>
             <h3 class="menu__title">Декаф Флэт Уайт</h3>
             <span class="menu__description">Кофе без кофеина из Эфиопии
@@ -344,7 +446,12 @@
           </li>
           <li class="menu__item">
             <div class="menu__image">
-              <img src="img/menu-cofee/coffee-can-6.png">
+              <picture>
+                <source srcset="img/menu-coffee/coffee-can-6.webp 1x, img/menu-coffee/coffee-can-6@2.webp 2x"
+                  type="image/webp">
+                <img src="img/menu-coffee/coffee-can-6.png" srcset="img/menu-coffee/coffee-can-6@2.png 2x" width="130"
+                  height="188" alt="Желтый кофе.">
+              </picture>
             </div>
             <h3 class="menu__title">Декаф Флэт Уайт</h3>
             <span class="menu__description">Кофе без кофеина из Эфиопии
@@ -396,8 +503,19 @@
       </div>
     </section>
     <section class="main-content__map map">
-      <div class="map__image">
-        <img src="img/map_bg.jpg" width="320" height="420" alt="Расположение на карте">
+      <h2 class="map__title visually-hidden">Расположение на карте.</h2>
+      <div class="map__image-container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/maps/map-desktop.webp 1x, img/maps/map-desktop@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/maps/map-tablet.webp 1x, img/maps/map-tablet@2x.webp 2x"
+            type="image/webp">
+          <source srcset="img/maps/map-mobile.webp 1x, img/maps/map-mobile@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/maps/map-desktop.jpg 1x, img/maps/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/maps/map-tablet.jpg 1x, img/maps/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/maps/map-mobile.jpg" srcset="img/maps/map-mobile@2x.webp 2x" width="320"
+            height="420" alt="Карта.">
+        </picture>
       </div>
       <div class="map__geolocation">
         <svg width="38" height="50" viewBox="0 0 38 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -477,7 +595,7 @@
         </ul>
       </div>
       <div class="footer-navigation__block">
-        <h2 class="footer-navigation__title" href="#">Медиа</h2>
+        <h2 class="footer-navigation__title">Медиа</h2>
         <ul class="footer-navigation__list">
           <li class="footer-navigation__item">
             <a class="footer-navigation__link" href="#">Блог</a>
@@ -491,7 +609,7 @@
         </ul>
       </div>
       <div class="footer-navigation__block">
-        <h2 class="footer-navigation__title" href="#">Контакты</h2>
+        <h2 class="footer-navigation__title">Контакты</h2>
         <address class="footer-navigation__address address">
           <a class="address__text" href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
           <a class="address__number" href="tel:+79999999999">+7 (999) 999-99-99</a>
