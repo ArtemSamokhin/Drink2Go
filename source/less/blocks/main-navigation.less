@@ -62,7 +62,6 @@
 }
 
 .main-navigation__menu {
-  display: none;
   width: 320px;
   position: absolute;
   right: 0;
@@ -71,7 +70,6 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    display: block;
     position: relative;
     width: auto;
     top: 0;
@@ -103,6 +101,7 @@
 .main-navigation__menu-link {
   text-decoration: none;
   color: #333333;
+  cursor: pointer;
 }
 
 .main-navigation__link-text {
